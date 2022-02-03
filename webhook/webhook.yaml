@@ -17,3 +17,9 @@ spec:
           '{"event":"{{.type}}","stage":"{{.data.stage}}","shkeptncontext":"{{.shkeptncontext}}","id":"{{.id}}"}'
           https://webhook.site/7bcc9d32-8f6c-45f7-bd70-65008ed85ebd
       subscriptionID: dac346ca-252b-4874-87db-928a62b44ce1
+    - type: sh.keptn.event.mytask-silent.finished
+      requests:
+        - curl --request POST --data
+          '{"event":"{{.type}}","stage":"{{.data.stage}}","shkeptncontext":"{{.shkeptncontext}}","id":"{{.id}}"}'
+          https://webhook.site/7bcc9d32-8f6c-45f7-bd70-65008ed85ebd
+      subscriptionID: d1be75f7-66d6-4e46-9d74-efe2134ac99e
