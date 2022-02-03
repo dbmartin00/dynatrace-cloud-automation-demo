@@ -11,3 +11,9 @@ spec:
           ({{.data.evaluation.score}} / 100)"}'
           https://webhook.site/7bcc9d32-8f6c-45f7-bd70-65008ed85ebd
       subscriptionID: 8299a1fd-1bf1-4797-969e-7e1fcd204d94
+    - type: sh.keptn.event.mytask-silent.triggered
+      requests:
+        - curl --request POST --data
+          '{"event":"{{.type}}","stage":"{{.data.stage}}","shkeptncontext":"{{.shkeptncontext}}","id":"{{.id}}"}'
+          https://webhook.site/7bcc9d32-8f6c-45f7-bd70-65008ed85ebd
+      subscriptionID: dac346ca-252b-4874-87db-928a62b44ce1
